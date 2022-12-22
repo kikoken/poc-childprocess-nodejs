@@ -15,6 +15,8 @@ process.on('message', (fileName) => {
         .on('error', err => { reject(err) })
         .on('end', () => {
             const msg = `${fileName} has been processed, ${data.length} rows` 
-            console(msg)
+            process.send(msg);
+            process.exit(0);
         })
 })
+

@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "csv-parser": "^3.0.0"
+    "aws-sdk": "^2.1281.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3"
   }
 }
